@@ -1,0 +1,55 @@
+body>footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+body>header {
+ display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+body>header>button.menu {
+    order: 0;
+}
+body>header>form {
+    order: 1;
+}
+body>header>a.logo {
+    order: 2;
+}
+body>header>a.button {
+    order: 3;
+}
+body>header>.carro {
+    order: 4;
+}
+
+body>main {
+  display: grid;
+  grid-template-columns:[line1] 20vw [line2] 10vw [line3] 10vw [line4] 20vw [line5] 10vw [line6] 10vw [line7] 20vw [line8] ;
+  grid-template-rows: [row1] 25% [row2] auto [row3] 25% [row4] ;
+  background-image: url("/image/chica1.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+
+}
+body > main > button {
+  grid-column: line7 / line8;
+  grid-row: row1 / row2;
+  justify-self: end;
+}
+body > main > h2 {
+  grid-column: line3 / line6;
+  grid-row: row2 / row3;
+  align-self: center;
+  justify-content: center;
+}
+body > main > nav {
+  display: flex;
+  flex-direction: row;
+  grid-column: line2 / line7;
+  grid-row: row3 / row4;
+}

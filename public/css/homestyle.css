@@ -1,0 +1,48 @@
+body {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+body>header {
+    font-family: 'Josefin Sans', 'Trebuchet MS';
+    color: #F7E7CE;
+    background-color: #FFFFFF;
+}
+
+
+body>header>ul>li>a:link {
+    color: #F7E7CE;
+}
+
+body>header>a:link {
+    color: #F7E7CE;
+}
+b
+body>main>img.producto {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+body > main > button > img {
+  width: 20px;
+}
+
+body > main > input {
+  display: none;
+}
+.carro  {
+  width: 2em;
+  height: 2em;
+  border-left-width: 0px;
+  padding-left: 1px;
+
+}
+.carro > img {
+  width: 1.5em;
+  height: 1.5em;
+
+    }
