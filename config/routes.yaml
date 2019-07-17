@@ -1,0 +1,28 @@
+home:
+    path:       /es/home
+    controller: homeController::indexAction
+       
+
+login:
+    path:       /es/login
+    controller: loginController::indexAction
+
+panties:
+    path:       /es/panties
+    controller: pantiesController::indexAction
+
+legal:
+    path:       /es/legal
+    controller: pantiesController::indexAction
+
+swimsuit:
+    path:       /es/swimsuit
+    controller: swimsuitController::indexAction
+
+bras:
+    path:       /es/bras
+    controller: brasController::indexAction
+
+contacto:
+    path:       /es/contacto
+    controller: contactoController::indexAction
