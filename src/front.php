@@ -24,4 +24,14 @@ if($ruta == '/home'){
 }
 
 
+if($ruta == '/panties'){
+	//include 'view/home.html';
+	$response = new BinaryfileResponse(__DIR__.'/view/panties.html');
+
+}else{
+	//include 'view/error.html';
+	$response = new BinaryfileResponse(__DIR__.'/view/error.html');
+}
+
+
 $response->send();
