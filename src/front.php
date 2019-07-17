@@ -1,45 +1,27 @@
 <?php
+ini_set('display_errors', true);
+require_once __DIR__.'/../vendor/autoload.php';
 
-ini_set("display_errors", true);
-
-$ruta = $_SERVER["REQUEST_URI"];
-
-
-switch ($ruta){
-	case "/es/home":
-		include "view/home.html";
-		break;
-	
-	case "/es/login":
-		include "view/login.html";
-		break;
-
-	case "/es/panties":
-		include "view/panties.html";
-		break;
-
-	case "/es/legal":
-		include "view/legal.html";
-		break;
-
-	case "/es/swimsuit":
-		include "view/swimsuit.html";
-		break;
-
-	case "/es/bras":
-		include "view/bras.html";
-		break;
-
-	case "/es/contacto":
-		include "view/contacto.html";
-		break;
-
-	default:
-		include "view/error.html";
-		break;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\BinaryfileResponse;
+use Symfony\Component\Routing;
 
 
+$request = Request::createFromGlobals();
 
+
+//$ruta = $_SERVER["REQUEST_URI"];
+$ruta = $request->getPathInfo();
+
+if($ruta == '/home'){
+	//include 'view/home.html';
+	$response = new BinaryfileResponse(__DIR__.'/view/home.html');
+
+}else{
+	//include 'view/error.html';
+	$response = new BinaryfileResponse(__DIR__.'/view/error.html');
 }
 
-?>
+
+$response->send();
