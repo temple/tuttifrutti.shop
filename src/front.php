@@ -13,25 +13,23 @@ $request = Request::createFromGlobals();
 
 //$ruta = $_SERVER["REQUEST_URI"];
 $ruta = $request->getPathInfo();
-//
-if($ruta == '/home'){
-	//include 'view/home.html';
-	$response = new BinaryfileResponse(__DIR__.'/view/es/home.html');
 
-}else{
-	//include 'view/error.html';
-	$response = new BinaryfileResponse(__DIR__.'/view/es/error.html');
+
+switch($ruta){
+
+	case '/home':
+	case '/':
+	case '/inicio':
+	case '/welcome':
+		$html_file = 'home.html';
+	break;
+	case '/panties':
+		$html_file = 'panties.html';
+	break;
+	default:
+		$html_file = 'error.html';
+	break;
 }
 
-
-if($ruta == '/panties'){
-	//include 'view/home.html';
-	$response = new BinaryfileResponse(__DIR__.'/view/es/panties.html');
-
-}else{
-	//include 'view/error.html';
-	$response = new BinaryfileResponse(__DIR__.'/view/es/error.html');
-}
-
-
+$response = new BinaryfileResponse(__DIR__.'/view/'.$html_file);
 $response->send();
