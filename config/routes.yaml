@@ -1,28 +1,43 @@
 home:
-    path:       /es/home
+    path:       /{lang}/home
     controller: homeController::indexAction
-       
+    defaults:
+        lang:   es   
 
 login:
-    path:       /es/login
+    path:       /{lang}/login
     controller: loginController::indexAction
+    defaults:
+        lang:   es   
+
 
 panties:
-    path:       /es/panties
+    path:       /{lang}/panties
     controller: pantiesController::indexAction
+    defaults:
+        lang:   es   
 
 legal:
-    path:       /es/legal
+    path:       /{lang}/legal
     controller: pantiesController::indexAction
+    defaults:
+        lang:   es   
 
 swimsuit:
-    path:       /es/swimsuit
+    path:       /{lang}/swimsuit
     controller: swimsuitController::indexAction
+    defaults:
+        lang:   es   
 
 bras:
-    path:       /es/bras
+    path:       /{lang}/bras
     controller: brasController::indexAction
+    defaults:
+        lang:   es   
 
 contacto:
-    path:       /es/contacto
+    path:       /{lang}/contacto
     controller: contactoController::indexAction
+    defaults:
+        lang:   es   
+    
