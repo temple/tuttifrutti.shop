@@ -1,3 +1,3 @@
 <?php
 
-include('../src/front.php');
+include('../src/FrontController.php');
