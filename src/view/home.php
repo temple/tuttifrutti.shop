@@ -13,7 +13,7 @@
 
 <body>
 <?php 
-include __DIR__.'/plantillas/header.php';
+include __DIR__.'/header.php';
 ?>
     <main>
         <button> <img src="image/search.png" alt="lupa"> </button>
@@ -28,7 +28,7 @@ include __DIR__.'/plantillas/header.php';
         </nav>
     </main>
 <?php
-include __DIR__.'/plantillas/footer.php'
+include __DIR__.'/footer.php'
 ?>
     
 </body>
