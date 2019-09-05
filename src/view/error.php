@@ -13,7 +13,7 @@
 </head>
 <body>
 <?php
-include __DIR__.'/plantillas/header.php';
+include __DIR__.'/header.php';
  ?>
    <main>
     <img class="producto" src="image/chicaerror.png"  />
@@ -23,7 +23,7 @@ include __DIR__.'/plantillas/header.php';
     <p>Lo sentimos, tu búsqueda no ha arrojado resultados.</p>
   </main>
 <?php 
-include __DIR__.'/plantillas/footer.php';
+include __DIR__.'/footer.php';
 ?>
 </body>
 </html>
