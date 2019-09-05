@@ -44,7 +44,8 @@ abstract class AbstractController{
 		}
 		try{
 				
-			if ( method_exists($this, $method) ){				
+			if ( method_exists($this, $method) ){			
+			$array_params_request = [$request , $params];
 			//var_dump($method, $params , $request);
 			return call_user_func_array( [$this,$method], $array_params_request);
 
