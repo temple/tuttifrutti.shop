@@ -19,7 +19,7 @@ class Routing
 	}	
 	public function buildRoutes(){
 
-		$content = file_get_contents(__DIR__."/config/routes.json");
+		$content = file_get_contents(__DIR__."/../config/routes.json");
 		$this->routes = json_decode($content); 
 		// Guardamos en content el contenido (string) del archivo de rutas
 		$this->routes = $this->routes instanceof \StdClass
