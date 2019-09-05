@@ -7,14 +7,14 @@ $paths =<<<PATHS
 		"action": "index"
 	},
 
-	"home/premium": {
-		"controller": "HomeController",
-		"action": "premium"
+	"ofertas": {
+		"controller": "OfertasController",
+		"action": "ofertas"
 	},
 
-	"login" : {
-		"controller": "LoginController",
-		"action": null
+	"user" : {
+		"controller": "UserController",
+		"action": "User"
 	},
 
 	"logout" :{
