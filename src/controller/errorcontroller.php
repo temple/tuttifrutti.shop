@@ -1,21 +1,26 @@
 <?php
 
-namespace;
+namespace controller;
 //TODO:
 // es: Determinar el namespace correcto
 // en: Determine the right namespace
 
 class ErrorController
+	extends AbstractController
 	//TODO: 
 	// es: relacionar correctamente con AbstractController
     // en: relate in the right manner with AbstractController
-	implements IndexControllerInterface
+	//implements IndexControllerInterface
 	//TODO:
 	// es: Importar IndexControllerInterface
 	// en: Import IndexControllerInterface
 {	
+	public $request;
+	public $params;
 
-	public function IndexAction(/* CHANGE ME*/);
+	public function IndexAction	($request , $params){
+		include __DIR__."/../view/error.php";
+	}
 	//TODO:
 	// es: Implementa la función y haz que muestre una vista de error
 	// en: Implement function and make it show an error view
