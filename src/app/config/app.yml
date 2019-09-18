@@ -1,0 +1,7 @@
+---
+
+front:
+  class: FrontController
+  namespace: null
+
+...
