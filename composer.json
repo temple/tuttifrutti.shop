@@ -1,11 +1,46 @@
 {
+    "name": "temple/aplicaciones_web",
+    "description": "Backend for learning purposes",
     "require": {
-        "symfony/routing": "^4.3",
-        "symfony/http-foundation": "^4.3",
-        "symfony/yaml": "^4.3"
-    }
+        "php":">=7.0"
+    },
+    "authors": [
+        {
+            "name": "Xavier Subirà",
+            "email": "xavier.subira.yahoo@gmail.com"
+        },
+        {
+            "name": "walaa alkhalifa",
+            "email": "w.anwar.khalifa@gmail.com"
+        },
+        {
+            "name": "Kyomi Guidet",
+            "email": "kyomiguidet@gmail.com"
+        },
+        {            
+            "name": "Jordi Gonzalez",
+            "email": "gonzalezsanchezjordi@gmail.com"
+        },
+        {      
+            "name": "alex joan ita",
+            "email": "itain.sys@gmail.com"
+        },
+        {
+            "name": "Leyre Sánchez",
+            "email": "lesanfu94@gmail.com"
+        },
+        {
+            "name": "Carmen Custodio",
+            "email": "chantra132@gmail.com"
+        },
+        {
+            "name": "Musa",
+            "email": "moossaaaa@gmail.com"
+        }
+    ],   
     "autoload": {
         "psr-4": {
-            "": "src/"
+            "": ["src/","src/app"]
         }
+    }
 }
