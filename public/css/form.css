@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+	/*No suma el ancho de los bordes y de paddings*/
+	box-sizing: border-box;
+}
+
+.contact{
+	margin: 20px auto;
+	padding: 20px;
+	width: 300px;
+	text-align: center;
+	border: 2px solid #ff5f5f91;
+	border-radius: 10px;
+}
+input{
+	width: 100%;
+	margin: 3px;
+	padding: 3px;
+}
+input#mensaje{
+	width: 100%;
+	margin: 3px;
+	padding:10px;
+	height: 100px;
+}
+/*Estilos de validación*/
+.border_error{
+	border: 1px solid #ff0000;
+}

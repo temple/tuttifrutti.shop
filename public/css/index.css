@@ -1,0 +1,74 @@
+/*Selector de todos los elementos del doc. HTML*/
+
+div{
+	text-align: left;
+	font-weight: bold;
+	font-family:  "Comic Sans MS", cursive, sans-serif;
+	padding: 10px;
+}
+#ajaxform{
+	margin: 20px auto;
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	width: 500px;
+	text-align: center;
+	border: 3px solid #392a2a91;
+	border-radius: 20px;
+	background: #97969691;
+}
+h3{
+	font-family:  "Comic Sans MS", cursive, sans-serif;
+	padding: 10px;
+}
+input{
+	width: 100%;
+	margin: 3px;
+	padding: 6px;
+	border: 3px solid #392a2a91;
+	border-radius: 20px;
+}
+textarea{
+	height: 250px;
+	width: 100%;
+	resize: none;
+	padding: 6px;
+	margin: 3px;
+	border: 3px solid #392a2a91;
+	border-radius: 20px;
+}
+
+/*Estilos de validación*/
+.border_error{
+	border: 3px solid #ff0000;
+	background-color: #E6E62B;
+}
+
+body>footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+body>header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+body>header>button.menu {
+    order: 0;
+}
+body>header>form {
+    order: 1;
+}
+body>header>a.logo {
+    order: 2;
+}
+body>header>a.button {
+    order: 3;
+}
+body>header>.carro {
+    order: 4;
+}
