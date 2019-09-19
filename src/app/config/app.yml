@@ -4,4 +4,10 @@ front:
   class: FrontController
   namespace: null
 
+
+db: 
+  host: localhost
+  dbname: mydb  
+  user: root
+  pass: secret
 ...
