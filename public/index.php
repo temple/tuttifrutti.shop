@@ -9,4 +9,7 @@ $reflector = new \ReflectionClass(APP);
 $app = $reflector->newInstance();
 if ($app instanceof ApplicationInterface)
 	$app->run();
+
+
+
 exit;

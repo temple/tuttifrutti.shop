@@ -94,5 +94,6 @@ $host = $GLOBALS['config']['app'] ['db']['host'];
 $schema = $GLOBALS['config']['app'] ['db']['dbname'];
 $user = $GLOBALS['config']['app'] ['db']['user'];
 $pass = $GLOBALS['config']['app'] ['db']['pass'];
-$pdo = new PDO('mysql:host='.$host';dbname='.$schema, $user, $pass);
-define ("BD", $pdo);
+$pdo = new PDO('mysql:host='.$host.';dbname='.$schema, $user, $pass);
+define ("db", $pdo);
+var_dump($pdo);
