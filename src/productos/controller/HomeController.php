@@ -3,6 +3,9 @@
 namespace productos\controller;
 use controller\AbstractController as IdxController;
 use controller\IndexControllerInterface as IdxInterface;
+use controller\DataController;
+use productos\model\ContentsRepository;
+
 class HomeController
 	extends IdxController
 	implements IdxInterface

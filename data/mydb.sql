@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Contacto` (
   `id` INT NOT NULL,
   `Usuario_id` INT NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_contacto_Usuario1_idx` (`Usuario_id` ASC),
+  INDEX `fk_contacto_Usuario1_idx` (`Usuario_id` ASC) ,
   CONSTRAINT `fk_contacto_Usuario1`
     FOREIGN KEY (`Usuario_id`)
     REFERENCES `mydb`.`Usuario` (`id`)
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Mensaje` (
   `Asunto` VARCHAR(45) NULL,
   `Contacto_id` INT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_Mensaje_contacto_idx` (`Contacto_id` ASC),
+  INDEX `fk_Mensaje_contacto_idx` (`Contacto_id` ASC) ,
   CONSTRAINT `fk_Mensaje_contacto`
     FOREIGN KEY (`Contacto_id`)
     REFERENCES `mydb`.`Contacto` (`id`)
@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Politica` (
   `Textolegal` LONGTEXT NULL,
   `Company_id` INT NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_Politica_Company1_idx` (`Company_id` ASC),
+  INDEX `fk_Politica_Company1_idx` (`Company_id` ASC) ,
   CONSTRAINT `fk_Politica_Company1`
     FOREIGN KEY (`Company_id`)
     REFERENCES `mydb`.`Company` (`id`)
@@ -99,7 +99,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Cuentas RRSS` (
   `imagen` VARCHAR(45) NULL,
   `Company_id` INT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_Cuentas RRSS_Company1_idx` (`Company_id` ASC),
+  INDEX `fk_Cuentas RRSS_Company1_idx` (`Company_id` ASC) ,
   CONSTRAINT `fk_Cuentas RRSS_Company1`
     FOREIGN KEY (`Company_id`)
     REFERENCES `mydb`.`Company` (`id`)
@@ -126,7 +126,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Familia` (
   `Titulo` VARCHAR(45) NULL,
   `Season_id` INT NOT NULL,
   PRIMARY KEY (`id`, `Season_id`),
-  INDEX `fk_Familia_Season1_idx` (`Season_id` ASC),
+  INDEX `fk_Familia_Season1_idx` (`Season_id` ASC) ,
   CONSTRAINT `fk_Familia_Season1`
     FOREIGN KEY (`Season_id`)
     REFERENCES `mydb`.`Season` (`id`)
@@ -146,7 +146,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Producto` (
   `Imagen` TEXT(150) NULL,
   `Familia_id` INT NOT NULL,
   PRIMARY KEY (`id`, `Familia_id`),
-  INDEX `fk_Producto_Familia1_idx` (`Familia_id` ASC),
+  INDEX `fk_Producto_Familia1_idx` (`Familia_id` ASC) ,
   CONSTRAINT `fk_Producto_Familia1`
     FOREIGN KEY (`Familia_id`)
     REFERENCES `mydb`.`Familia` (`id`)

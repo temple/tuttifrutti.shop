@@ -8,6 +8,6 @@ front:
 db: 
   host: localhost
   dbname: mydb  
-  user: root
+  user: app
   pass: secret
 ...
