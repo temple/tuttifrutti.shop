@@ -95,5 +95,8 @@ $schema = $GLOBALS['config']['app'] ['db']['dbname'];
 $user = $GLOBALS['config']['app'] ['db']['user'];
 $pass = $GLOBALS['config']['app'] ['db']['pass'];
 $pdo = new PDO('mysql:host='.$host.';dbname='.$schema, $user, $pass);
-define ("db", $pdo);
-var_dump($pdo);
+define ("BD", $pdo);
+
+foreach ($pdo->query('SELECT Titulo FROM Familia WHERE id>1') as $familia ){
+print_r($familia);
+}
