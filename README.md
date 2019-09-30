@@ -1,4 +1,4 @@
-Aplicaciones Web
+Tuttifrutti.shop
 ========
 
 Aplicaciones Web es un proyecto pensado para el aprendizaje del Desarrollo de aplicaciones con tecnologías Web.
